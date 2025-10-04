@@ -1,0 +1,23 @@
+{
+  "name": "adminth-secret-manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start:server": "node server/index.js",
+    "dev:server": "nodemon server/index.js",
+    "start:client": "echo \"Start your frontend dev server (e.g. Vite/CRA) in client/ separately.\"",
+    "start": "concurrently \"npm:dev:server\" \"npm:start:client\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "lucide-react": "^0.278.0",
+    "pg": "^8.11.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
